@@ -11,6 +11,8 @@ See https://hulks.de/ and https://hulks.de/publications/ for more information.
 
 _dont ask about the name_
 
+<img src="./etc/img/bisnaguinha.jpeg" alt="bisnaguinha" width="200"/>
+
 ## License
 
 Copyright (C) 2018-2023 HULKs e.V.
