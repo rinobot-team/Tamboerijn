@@ -1,0 +1,26 @@
+[package]
+name = "hulk_webots"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-only"
+homepage = "https://github.com/hulks/hulk"
+
+[dependencies]
+chrono = { workspace = true }
+color-eyre = { workspace = true }
+ctrlc = { workspace = true }
+fern = { workspace = true }
+framework = { workspace = true }
+hardware = { workspace = true }
+hulk = { workspace = true }
+log = { workspace = true }
+nalgebra = { workspace = true }
+parking_lot = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+spl_network = { workspace = true }
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+types = { workspace = true }
+webots = { workspace = true }

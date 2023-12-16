@@ -1,0 +1,24 @@
+[package]
+name = "pepsi"
+version = "2.5.0"
+edition = "2021"
+license = "GPL-3.0-only"
+homepage = "https://github.com/hulks/hulk"
+
+[dependencies]
+aliveness = { workspace = true }
+bat = { workspace = true }
+clap = { workspace = true }
+clap_complete = { workspace = true }
+color-eyre = { workspace = true }
+constants = { workspace = true }
+futures-util = { workspace = true }
+indicatif = { workspace = true }
+nao = { workspace = true }
+regex = { workspace = true }
+repository = { workspace = true }
+serde_json = { workspace = true }
+source_analyzer = { workspace = true }
+spl_network_messages = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }

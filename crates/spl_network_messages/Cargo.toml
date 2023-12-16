@@ -1,0 +1,21 @@
+[package]
+name = "spl_network_messages"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-only"
+homepage = "https://github.com/hulks/hulk"
+
+[build-dependencies]
+bindgen = { workspace = true }
+
+[dependencies]
+approx = { workspace = true }
+color-eyre = { workspace = true }
+nalgebra = { workspace = true }
+num-derive = {workspace = true}
+num-traits = {workspace = true}
+serde = { workspace = true }
+serialize_hierarchy = { workspace = true }
+
+[dev-dependencies]
+bincode = { workspace = true }

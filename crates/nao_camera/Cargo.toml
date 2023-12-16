@@ -1,0 +1,17 @@
+[package]
+name = "nao_camera"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-only"
+homepage = "https://github.com/hulks/hulk"
+
+[dependencies]
+i2cdev = { workspace = true }
+libc = { workspace = true }
+nix = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+types = { workspace = true }
+
+[build-dependencies]
+bindgen = { workspace = true }

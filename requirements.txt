@@ -1,0 +1,9 @@
+# hardware status
+tabulate >=0.8.1
+
+# tools/TextToSpeech
+google-api-python-client
+
+# docs
+mkdocs
+mkdocs-material

@@ -1,0 +1,16 @@
+[package]
+name = "source_analyzer"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-only"
+homepage = "https://github.com/hulks/hulk"
+
+[dependencies]
+convert_case = { workspace = true }
+proc-macro2 = { workspace = true }
+quote = { workspace = true }
+syn = { workspace = true }
+topological-sort = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+threadbound = { workspace = true }
