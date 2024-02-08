@@ -126,7 +126,7 @@ impl ActuatorInterface for HardwareInterface {
 impl CameraInterface for HardwareInterface {
     fn read_from_camera(&self, camera_position: CameraPosition) -> Result<YCbCr422Image> {
         match camera_position {
-            CameraPosition::Top => self.camera_top.read(),
+            CameraPosition::Top => self.camera_bottom.read(),
             CameraPosition::Bottom => self.camera_bottom.read(),
         }
     }
