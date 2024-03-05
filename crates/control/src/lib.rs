@@ -10,7 +10,7 @@ pub mod dribble_path_planner;
 pub mod fake_data;
 pub mod fall_state_estimation;
 pub mod game_controller_filter;
-pub mod game_state_filter;
+pub mod game_controller_state_filter;
 pub mod ground_contact_detector;
 pub mod ground_provider;
 pub mod kick_selector;

@@ -27,7 +27,7 @@ use tokio_util::sync::CancellationToken;
 use types::{
     field_dimensions::FieldDimensions,
     field_marks::{field_marks_from_field_dimensions, FieldMark},
-    game_controller_state::GameControllerState,
+    filtered_game_controller_state::FilteredGameControllerState,
     line::{Line, Line2},
     line_data::LineData,
     primary_state::PrimaryState,
@@ -172,7 +172,8 @@ async fn recording_player(
             {
                 let mut database = control_writer.next();
 
-                database.main_outputs.game_controller_state = data.game_controller_state;
+                database.main_outputs.filtered_game_controller_state =
+                    data.filtered_game_controller_state;
                 database.main_outputs.has_ground_contact = data.has_ground_contact;
                 database.main_outputs.primary_state = data.primary_state;
                 database.main_outputs.robot_to_field = data.robot_to_field;
@@ -221,7 +222,7 @@ struct ControlDatabase {
 
 #[derive(Clone, Debug, Default, Deserialize, Serialize, SerializeHierarchy)]
 struct ControlMainOutputs {
-    pub game_controller_state: Option<GameControllerState>,
+    pub filtered_game_controller_state: Option<FilteredGameControllerState>,
     pub has_ground_contact: bool,
     pub primary_state: PrimaryState,
     pub robot_to_field: Option<Isometry2<f32>>,

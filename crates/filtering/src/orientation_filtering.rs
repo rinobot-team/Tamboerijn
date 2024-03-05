@@ -187,7 +187,7 @@ fn calculate_initial_orientation(linear_acceleration: Vector3<f32>) -> UnitQuate
 
 #[cfg(test)]
 mod test {
-    use std::f32::consts::PI;
+    use std::f32::consts::{PI, TAU};
 
     use approx::assert_relative_eq;
     use nalgebra::vector;
@@ -286,7 +286,7 @@ mod test {
     fn full_rotation() {
         let mut measured_acceleration = Vec::new();
         let mut measured_angular_velocity = Vec::new();
-        let frequency = 2.0 * PI;
+        let frequency = TAU;
         for _ in 0..=NUMBER_OF_MEASUREMENTS {
             measured_acceleration.push(vector![0.0, 0.0, GRAVITATIONAL_CONSTANT]);
             measured_angular_velocity.push(frequency * Vector3::z());
@@ -313,7 +313,7 @@ mod test {
 
         let mut measured_acceleration = Vec::new();
         let mut measured_angular_velocity = Vec::new();
-        let frequency = 2.0 * PI;
+        let frequency = TAU;
         for _ in 0..NUMBER_OF_MEASUREMENTS {
             measured_acceleration.push(
                 vector![0.0, 0.0, GRAVITATIONAL_CONSTANT]
@@ -350,7 +350,7 @@ mod test {
         let mut measured_angular_velocity = Vec::new();
         let mut left_force_sensitive_resistor = Vec::new();
         let mut right_force_sensitive_resistor = Vec::new();
-        let frequency = 2.0 * PI;
+        let frequency = TAU;
 
         for _ in 0..NUMBER_OF_MEASUREMENTS {
             measured_acceleration.push(

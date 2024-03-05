@@ -1,17 +1,10 @@
-# Tamboerijn
+# HULK
 
-This repo contains the codebase for Rinobot-Jaguar. 
-It is based in the HULKs 2023 code release.
-
-In the future we will add PT-BR docs.
+This repository contains the robot control program and associated tools of the RoboCup SPL team HULKs.
 
 See https://hulks.de/hulk/ for our documentation.
 
 See https://hulks.de/ and https://hulks.de/publications/ for more information.
-
-_dont ask about the name_
-
-<img src="./etc/img/bisnaguinha.jpeg" alt="bisnaguinha" width="200"/>
 
 ## License
 

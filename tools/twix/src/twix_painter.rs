@@ -1,4 +1,4 @@
-use std::f32::consts::{FRAC_1_SQRT_2, FRAC_PI_2, PI, TAU};
+use std::f32::consts::{FRAC_1_SQRT_2, FRAC_PI_2, TAU};
 
 use eframe::{
     egui::{Painter, Response, Sense, Ui},
@@ -289,7 +289,7 @@ impl TwixPainter {
         );
 
         (0..5).for_each(|index| {
-            let angle = index as f32 * PI * 2.0 / 5.0;
+            let angle = index as f32 * TAU / 5.0;
             let position = position + vector![angle.cos(), angle.sin()] * radius * 0.7;
             self.n_gon(5, position, radius / 3.0, Color32::BLACK);
         });
@@ -300,7 +300,7 @@ impl TwixPainter {
         let points: Vec<_> = (0..corners)
             .map(|index| {
                 self.transform_world_to_pixel({
-                    let angle = index as f32 * PI * 2.0 / corners as f32;
+                    let angle = index as f32 * TAU / corners as f32;
                     position + vector![angle.cos(), angle.sin()] * radius
                 })
             })
@@ -396,7 +396,7 @@ impl TwixPainter {
             max: self.transform_world_to_pixel(max),
         };
         self.painter
-            .rect_filled(sort_rect(rect), Rounding::none(), fill_color);
+            .rect_filled(sort_rect(rect), Rounding::ZERO, fill_color);
     }
 
     pub fn rect_stroke(&self, min: Point2<f32>, max: Point2<f32>, stroke: Stroke) {
@@ -406,7 +406,7 @@ impl TwixPainter {
         };
         let stroke = self.transform_stroke(stroke);
         self.painter
-            .rect_stroke(sort_rect(rect), Rounding::none(), stroke);
+            .rect_stroke(sort_rect(rect), Rounding::ZERO, stroke);
     }
 
     pub fn circle(&self, center: Point2<f32>, radius: f32, fill_color: Color32, stroke: Stroke) {
@@ -443,13 +443,13 @@ impl TwixPainter {
             .dot(&end_relative)
             < 0.0;
         let counterclockwise_angle_difference = if end_right_of_start {
-            2.0 * PI - angle_difference
+            TAU - angle_difference
         } else {
             angle_difference
         };
 
         let signed_angle_difference = match orientation {
-            Orientation::Clockwise => -2.0 * PI + counterclockwise_angle_difference,
+            Orientation::Clockwise => -TAU + counterclockwise_angle_difference,
             Orientation::Counterclockwise => counterclockwise_angle_difference,
             Orientation::Colinear => 0.0,
         };

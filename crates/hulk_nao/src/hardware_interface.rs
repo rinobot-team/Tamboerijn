@@ -59,7 +59,7 @@ pub struct HardwareInterface {
     paths: Paths,
     spl_network_endpoint: Endpoint,
     async_runtime: Runtime,
-    camera_top: Camera,
+    //camera_top: Camera,
     camera_bottom: Camera,
     enable_recording: AtomicBool,
     keep_running: CancellationToken,
@@ -88,13 +88,13 @@ impl HardwareInterface {
                 .block_on(Endpoint::new(parameters.spl_network_ports))
                 .wrap_err("failed to initialize SPL network")?,
             async_runtime: runtime,
-            camera_top: Camera::new(
+            /*camera_top: Camera::new(
                 "/dev/video-top",
                 CameraPosition::Top,
                 parameters.camera_top,
                 i2c_head_mutex.clone(),
             )
-            .wrap_err("failed to initialize top camera")?,
+            .wrap_err("failed to initialize top camera")?,*/
 
             camera_bottom: Camera::new(
                 "/dev/video-bottom",
@@ -126,7 +126,7 @@ impl ActuatorInterface for HardwareInterface {
 impl CameraInterface for HardwareInterface {
     fn read_from_camera(&self, camera_position: CameraPosition) -> Result<YCbCr422Image> {
         match camera_position {
-            CameraPosition::Top => self.camera_bottom.read(),
+            CameraPosition::Top => self.camera_bottom.read(), //antigo "CameraPosition::Top => self.camera_top.read(),"
             CameraPosition::Bottom => self.camera_bottom.read(),
         }
     }

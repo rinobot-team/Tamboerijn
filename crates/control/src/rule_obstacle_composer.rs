@@ -4,11 +4,10 @@ use framework::MainOutput;
 use geometry::{circle::Circle, rectangle::Rectangle};
 use nalgebra::{point, vector, Point2};
 use serde::{Deserialize, Serialize};
-use spl_network_messages::{GameState, SubState, Team};
+use spl_network_messages::{SubState, Team};
 use types::{
-    field_dimensions::FieldDimensions, filtered_game_state::FilteredGameState,
-    game_controller_state::GameControllerState, rule_obstacles::RuleObstacle,
-    world_state::BallState,
+    field_dimensions::FieldDimensions, filtered_game_controller_state::FilteredGameControllerState,
+    filtered_game_state::FilteredGameState, rule_obstacles::RuleObstacle, world_state::BallState,
 };
 
 #[derive(Deserialize, Serialize)]
@@ -19,9 +18,11 @@ pub struct CreationContext {}
 
 #[context]
 pub struct CycleContext {
-    game_controller_state: RequiredInput<Option<GameControllerState>, "game_controller_state?">,
-    filtered_game_state: RequiredInput<Option<FilteredGameState>, "filtered_game_state?">,
+    filtered_game_controller_state:
+        RequiredInput<Option<FilteredGameControllerState>, "filtered_game_controller_state?">,
     ball_state: Input<Option<BallState>, "ball_state?">,
+
+    center_circle_obstacle_increase: Parameter<f32, "center_circle_obstacle_increase">,
     field_dimensions: Parameter<FieldDimensions, "field_dimensions">,
 }
 
@@ -40,13 +41,9 @@ impl RuleObstacleComposer {
         let free_kick_obstacle_radius = 0.75;
 
         let mut rule_obstacles = Vec::new();
-        match (
-            context.game_controller_state,
-            context.filtered_game_state,
-            context.ball_state,
-        ) {
+        match (context.filtered_game_controller_state, context.ball_state) {
             (
-                GameControllerState {
+                FilteredGameControllerState {
                     sub_state:
                         Some(
                             SubState::KickIn
@@ -55,47 +52,47 @@ impl RuleObstacleComposer {
                             | SubState::PushingFreeKick,
                         ),
                     kicking_team: Team::Opponent | Team::Uncertain,
-                    game_state: GameState::Playing,
+                    game_state: FilteredGameState::Playing { .. },
                     ..
                 },
-                _,
                 Some(ball),
             ) => {
-                let obstacle = RuleObstacle::Circle(Circle::new(
+                let free_kick_obstacle = RuleObstacle::Circle(Circle::new(
                     ball.ball_in_field,
                     free_kick_obstacle_radius,
                 ));
-                rule_obstacles.push(obstacle);
+                rule_obstacles.push(free_kick_obstacle);
             }
             (
-                GameControllerState {
-                    game_state: GameState::Playing,
-                    sub_state: None,
+                FilteredGameControllerState {
+                    game_state:
+                        FilteredGameState::Playing {
+                            ball_is_free: false,
+                            kick_off: true,
+                        },
                     ..
-                },
-                FilteredGameState::Playing {
-                    ball_is_free: false,
                 },
                 _,
             ) => {
-                let obstacle = RuleObstacle::Circle(Circle::new(
+                let center_circle_obstacle = RuleObstacle::Circle(Circle::new(
                     Point2::origin(),
-                    context.field_dimensions.center_circle_diameter / 2.0,
+                    context.field_dimensions.center_circle_diameter / 2.0
+                        * context.center_circle_obstacle_increase,
                 ));
-                rule_obstacles.push(obstacle);
+                dbg!("center circle obstacle created");
+                rule_obstacles.push(center_circle_obstacle);
             }
             (
-                GameControllerState {
+                FilteredGameControllerState {
                     sub_state: Some(SubState::PenaltyKick),
-                    game_state: GameState::Playing,
+                    game_state: FilteredGameState::Playing { .. },
                     ..
                 },
-                _,
                 _,
             ) => {
                 let penalty_box_obstacle = create_penalty_box(
                     context.field_dimensions,
-                    context.game_controller_state.kicking_team,
+                    context.filtered_game_controller_state.kicking_team,
                 );
                 rule_obstacles.push(penalty_box_obstacle);
             }

@@ -17,6 +17,7 @@ pub mod field_border;
 pub mod field_color;
 pub mod field_dimensions;
 pub mod field_marks;
+pub mod filtered_game_controller_state;
 pub mod filtered_game_state;
 pub mod filtered_segments;
 pub mod filtered_whistle;

@@ -1,4 +1,4 @@
-use std::f32::consts::PI;
+use std::f32::consts::TAU;
 
 use approx::{AbsDiffEq, RelativeEq};
 use nalgebra::{distance, vector, Point2};
@@ -87,11 +87,11 @@ impl Circle {
         let mut angle_start_to_end = vector_end.y.atan2(vector_end.x) - angle_x_axis_to_start;
 
         if angle_start_to_obstacle < 0.0 {
-            angle_start_to_obstacle += 2.0 * PI;
+            angle_start_to_obstacle += TAU;
         }
 
         if angle_start_to_end < 0.0 {
-            angle_start_to_end += 2.0 * PI;
+            angle_start_to_end += TAU;
         }
 
         (angle_start_to_obstacle < angle_start_to_end) ^ (orientation == Orientation::Clockwise)
