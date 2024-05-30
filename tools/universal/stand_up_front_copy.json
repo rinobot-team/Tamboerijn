@@ -39,10 +39,17 @@
   },
   "motion": [
     {
+
+
+
+
+
+
+
       "keyframes": [
         {
           "duration": 0.550,
-          "positions": {
+          "positions": {  
             "head": {
               "yaw": 0,
               "pitch": 0.0
@@ -124,7 +131,7 @@
         },
         {
           "duration": 0.700,
-          "positions": {
+          "positions": { 
             "head": {
               "yaw": 0,
               "pitch": -0.5799729104377157
@@ -165,7 +172,7 @@
         },
         {
           "duration": 0.7,
-          "positions": {
+          "positions": { 
             "head": {
               "yaw": 0,
               "pitch": 0
@@ -206,7 +213,7 @@
         },
         {
           "duration": 0.7,
-          "positions": {
+          "positions": { 
             "head": {
               "yaw": 0,
               "pitch": 0.0
@@ -247,7 +254,7 @@
         },
         {
           "duration": 0.500,
-          "positions": {
+          "positions": { 
             "head": {
               "yaw": 0,
               "pitch": 0
@@ -288,7 +295,7 @@
         },
         {
           "duration": 0.500,
-          "positions": {
+          "positions": { 
             "head": {
               "yaw": 0.0,
               "pitch": 0.0
@@ -329,7 +336,7 @@
         },
         {
           "duration": 0.6,
-          "positions": {
+          "positions": { 
             "head": {
               "yaw": 0.0,
               "pitch": 0.5
@@ -370,7 +377,7 @@
         },
         {
           "duration": 0.3,
-          "positions": {
+          "positions": { 
             "head": {
               "yaw": 0.0,
               "pitch": 0.5
@@ -452,6 +459,16 @@
           }
         }
       ],
+
+
+
+
+
+
+
+
+
+
       "exit_condition": {
         "StabilizedCondition": {
           "tolerance": 0.1,
@@ -464,7 +481,7 @@
       "keyframes": [
         {
           "duration": 0.6,
-          "positions": {
+          "positions": { 
             "head": {
               "pitch": 0.5,
               "yaw": 0.08432793617248535
@@ -506,7 +523,7 @@
 
         {
           "duration": 0.2,
-          "positions": {
+          "positions": { 
             "head": {
               "pitch": 0.5,
               "yaw": 0.2469320297241211
@@ -548,7 +565,7 @@
 
         {
           "duration": 0.8,
-          "positions": {
+          "positions": { 
             "head": {
               "pitch": 0.2746279239654541,
               "yaw": 0.3742539882659912
@@ -600,7 +617,7 @@
       "keyframes": [
         {
           "duration": 1,
-          "positions": {
+          "positions": { 
             "head": {
               "pitch": 0.0030260086059570312,
               "yaw": 0.13034796714782715

@@ -1,0 +1,1056 @@
+{
+  "initial_positions": {
+    "head": {
+      "yaw": 0,
+      "pitch": -0.672
+    },
+    "left_arm": {
+      "shoulder_pitch": -0.017453292519943295,
+      "shoulder_roll": 1.1519173063162575,
+      "elbow_yaw": -1.5184364492350666,
+      "elbow_roll": -0.029670597283903602,
+      "wrist_yaw": -1.5707963267948966,
+      "hand": 0
+    },
+    "right_arm": {
+      "shoulder_pitch": 0.017453292519943295,
+      "shoulder_roll": -1.1519173063162575,
+      "elbow_yaw": 1.5184364492350666,
+      "elbow_roll": 0.029670597283903602,
+      "wrist_yaw": 1.5707963267948966,
+      "hand": 0
+    },
+    "left_leg": {
+      "hip_yaw_pitch": 0,
+      "hip_roll": 0,
+      "hip_pitch": 0,
+      "knee_pitch": 0,
+      "ankle_pitch": 1.0471975511965976,
+      "ankle_roll": 0
+    },
+    "right_leg": {
+      "hip_yaw_pitch": 0,
+      "hip_roll": 0,
+      "hip_pitch": 0,
+      "knee_pitch": 0,
+      "ankle_pitch": 1.0471975511965976,
+      "ankle_roll": 0
+    }
+  },
+  "motion": [
+    {
+      "keyframes": [
+        {
+          "duration": 0.55,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.5707963267948966,
+              "shoulder_roll": 0.17453292519943295,
+              "elbow_yaw": 0.0,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 1.5707963267948966,
+              "shoulder_roll": -0.17453292519943295,
+              "elbow_yaw": 0.0,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": 0.0,
+              "hip_roll": 0.0,
+              "hip_pitch": 0.0,
+              "knee_pitch": 0.0,
+              "ankle_pitch": 0.5235987755982988,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": 0.0,
+              "hip_roll": 0.0,
+              "hip_pitch": 0.0,
+              "knee_pitch": 0.0,
+              "ankle_pitch": 0.5235987755982988,
+              "ankle_roll": 0.0
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.5,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 0.0,
+              "shoulder_roll": 1.5707963267948966,
+              "elbow_yaw": 0.0,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 0.0,
+              "shoulder_roll": -1.5707963267948966,
+              "elbow_yaw": 0.0,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.8028514559173916,
+              "hip_pitch": 0.5759586531581288,
+              "knee_pitch": 0.5235987755982988,
+              "ankle_pitch": -0.5235987755982988,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": -0.8028514559173916,
+              "hip_pitch": 0.5759586531581288,
+              "knee_pitch": 0.5235987755982988,
+              "ankle_pitch": -0.5235987755982988,
+              "ankle_roll": 0.0
+            }
+          }
+        },
+        {
+          "duration": 0.7,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": -0.5799729104377157
+            },
+            "left_arm": {
+              "shoulder_pitch": -1.5699236621688994,
+              "shoulder_roll": 0.0,
+              "elbow_yaw": -1.5699236621688994,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": -1.5699236621688994,
+              "shoulder_roll": 0.0,
+              "elbow_yaw": 1.5699236621688994,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.8028514559173916,
+              "hip_pitch": -0.6981317007977318,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": -0.5235987755982988,
+              "ankle_roll": 0.3490658503988659
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": -0.8028514559173916,
+              "hip_pitch": -0.6981317007977318,
+              "knee_pitch": 0.0,
+              "ankle_pitch": -0.5235987755982988,
+              "ankle_roll": -0.3490658503988659
+            }
+          }
+        },
+        {
+          "duration": 0.7,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": -0.8700466321191733,
+              "shoulder_roll": 0.0,
+              "elbow_yaw": -1.5699236621688994,
+              "elbow_roll": -0.6099925735720182,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": -0.8700466321191733,
+              "shoulder_roll": 0.0,
+              "elbow_yaw": 1.5699236621688994,
+              "elbow_roll": 0.6099925735720182,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.8028514559173916,
+              "hip_pitch": -1.5533430342749532,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 0.0,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.0,
+              "hip_pitch": -1.5533430342749532,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 0.0,
+              "ankle_roll": 0.0
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.7,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 0.6108652381980153,
+              "shoulder_roll": 0.0,
+              "elbow_yaw": -1.2217304763960306,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 0.6108652381980153,
+              "shoulder_roll": 0.0,
+              "elbow_yaw": 1.2217304763960306,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": -0.2792526803190927,
+              "hip_pitch": -0.7853981633974483,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 0.17453292519943295,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.2792526803190927,
+              "hip_pitch": -0.7853981633974483,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 0.17453292519943295,
+              "ankle_roll": 0.0
+            }
+          }
+        },
+        {
+          "duration": 0.5,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 0.5235987755982988,
+              "shoulder_roll": 0.3490658503988659,
+              "elbow_yaw": -1.2217304763960306,
+              "elbow_roll": -1.5707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 0.5235987755982988,
+              "shoulder_roll": -0.3490658503988659,
+              "elbow_yaw": 1.2217304763960306,
+              "elbow_roll": 1.5707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": -0.2792526803190927,
+              "hip_pitch": -0.7853981633974483,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 0.17453292519943295,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.2792526803190927,
+              "hip_pitch": -0.7853981633974483,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 0.17453292519943295,
+              "ankle_roll": 0.0
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.5,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": -1.2217304763960306,
+              "shoulder_roll": 1.3264502315156905,
+              "elbow_yaw": -0.3490658503988659,
+              "elbow_roll": -1.5707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": -1.2217304763960306,
+              "shoulder_roll": -1.3264502315156905,
+              "elbow_yaw": 0.3490658503988659,
+              "elbow_roll": 1.5707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": -0.2792526803190927,
+              "hip_pitch": -0.9599310885968813,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 0.17453292519943295,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.2792526803190927,
+              "hip_pitch": -0.9599310885968813,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 0.17453292519943295,
+              "ankle_roll": 0.0
+            }
+          }
+        },
+        {
+          "duration": 0.35,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": -1.2217304763960306,
+              "shoulder_roll": 1.3264502315156905,
+              "elbow_yaw": -0.3490658503988659,
+              "elbow_roll": -0.3490658503988659,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": -1.2217304763960306,
+              "shoulder_roll": -1.3264502315156905,
+              "elbow_yaw": 0.3490658503988659,
+              "elbow_roll": 0.3490658503988659,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": -0.2792526803190927,
+              "hip_pitch": -0.9599310885968813,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 1.2217304763960306,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.2792526803190927,
+              "hip_pitch": -0.9599310885968813,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 1.2217304763960306,
+              "ankle_roll": 0.0
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.325,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.1344640137963142,
+              "shoulder_roll": 1.2217304763960306,
+              "elbow_yaw": -0.3490658503988659,
+              "elbow_roll": -0.3490658503988659,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 1.1344640137963142,
+              "shoulder_roll": -1.2217304763960306,
+              "elbow_yaw": 0.3490658503988659,
+              "elbow_roll": 0.3490658503988659,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": -0.2792526803190927,
+              "hip_pitch": -0.9599310885968813,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 1.2217304763960306,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.2792526803190927,
+              "hip_pitch": -0.9599310885968813,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 1.2217304763960306,
+              "ankle_roll": 0.0
+            }
+          }
+        },
+        {
+          "duration": 0.4,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.7453292519943295,
+              "shoulder_roll": 0.6981317007977318,
+              "elbow_yaw": 0.3490658503988659,
+              "elbow_roll": -0.3490658503988659,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 1.7453292519943295,
+              "shoulder_roll": -0.6981317007977318,
+              "elbow_yaw": -0.3490658503988659,
+              "elbow_roll": 0.3490658503988659,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": -0.2792526803190927,
+              "hip_pitch": -0.9599310885968813,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 1.2217304763960306,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.2217304763960306,
+              "hip_roll": 0.2792526803190927,
+              "hip_pitch": -0.9599310885968813,
+              "knee_pitch": -0.08726646259971647,
+              "ankle_pitch": 1.2217304763960306,
+              "ankle_roll": 0.0
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.4,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 2.007128639793479,
+              "shoulder_roll": 0.0,
+              "elbow_yaw": 0.3490658503988659,
+              "elbow_roll": -0.3490658503988659,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.007128639793479,
+              "shoulder_roll": 0.0,
+              "elbow_yaw": -0.3490658503988659,
+              "elbow_roll": 0.3490658503988659,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.1344640137963142,
+              "hip_roll": 0.5585053606381855,
+              "hip_pitch": -1.53588974175501,
+              "knee_pitch": 1.4486232791552935,
+              "ankle_pitch": 0.8028514559173916,
+              "ankle_roll": -0.17453292519943295
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.1344640137963142,
+              "hip_roll": -0.5585053606381855,
+              "hip_pitch": -1.53588974175501,
+              "knee_pitch": 1.4486232791552935,
+              "ankle_pitch": 0.8028514559173916,
+              "ankle_roll": 0.17453292519943295
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.2,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.8849555921538759,
+              "shoulder_roll": -0.20943951023931956,
+              "elbow_yaw": 0.33161255787892263,
+              "elbow_roll": -0.3141592653589793,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.0943951023931953,
+              "shoulder_roll": -0.2792526803190927,
+              "elbow_yaw": -0.5235987755982988,
+              "elbow_roll": 0.15707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.0821041362364843,
+              "hip_roll": 0.33161255787892263,
+              "hip_pitch": -1.5009831567151235,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": 0.3141592653589793,
+              "ankle_roll": -0.12217304763960307
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.0821041362364843,
+              "hip_roll": -0.6632251157578453,
+              "hip_pitch": -1.4486232791552935,
+              "knee_pitch": 0.4886921905584123,
+              "ankle_pitch": 0.9424777960769379,
+              "ankle_roll": 0.0
+            }
+          }
+        },
+        {
+          "duration": 0.2,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.8849555921538759,
+              "shoulder_roll": -0.20943951023931956,
+              "elbow_yaw": 0.33161255787892263,
+              "elbow_roll": -0.3141592653589793,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.0943951023931953,
+              "shoulder_roll": -0.2792526803190927,
+              "elbow_yaw": -0.5235987755982988,
+              "elbow_roll": 0.15707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.1519173063162575,
+              "hip_roll": 0.33161255787892263,
+              "hip_pitch": -0.7853981633974483,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -0.2792526803190927,
+              "ankle_roll": -0.17453292519943295
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.1519173063162575,
+              "hip_roll": -0.6632251157578453,
+              "hip_pitch": -1.2217304763960306,
+              "knee_pitch": 0.4188790204786391,
+              "ankle_pitch": 0.9424777960769379,
+              "ankle_roll": 0.05235987755982989
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.2,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.8849555921538759,
+              "shoulder_roll": -0.20943951023931956,
+              "elbow_yaw": 0.33161255787892263,
+              "elbow_roll": -0.3141592653589793,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.0943951023931953,
+              "shoulder_roll": -0.2792526803190927,
+              "elbow_yaw": -0.5235987755982988,
+              "elbow_roll": 0.15707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.1868238913561442,
+              "hip_roll": 0.17453292519943295,
+              "hip_pitch": -0.24434609527920614,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -0.8552113334772214,
+              "ankle_roll": -0.29670597283903605
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.1868238913561442,
+              "hip_roll": -0.47123889803846897,
+              "hip_pitch": -1.5009831567151235,
+              "knee_pitch": 0.6981317007977318,
+              "ankle_pitch": 1.0122909661567112,
+              "ankle_roll": 0.017453292519943295
+            }
+          }
+        },
+        {
+          "duration": 0.2,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.8849555921538759,
+              "shoulder_roll": -0.20943951023931956,
+              "elbow_yaw": 0.33161255787892263,
+              "elbow_roll": -0.3141592653589793,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.0943951023931953,
+              "shoulder_roll": -0.2792526803190927,
+              "elbow_yaw": -0.5235987755982988,
+              "elbow_roll": 0.15707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.117010721276371,
+              "hip_roll": 0.20943951023931956,
+              "hip_pitch": -0.2792526803190927,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -0.9250245035569946,
+              "ankle_roll": -0.19198621771937624
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.117010721276371,
+              "hip_roll": -0.4537856055185257,
+              "hip_pitch": -1.2217304763960306,
+              "knee_pitch": 0.7330382858376184,
+              "ankle_pitch": 0.9250245035569946,
+              "ankle_roll": 0.017453292519943295
+            }
+          }
+        },
+        {
+          "duration": 0.2,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.8849555921538759,
+              "shoulder_roll": -0.20943951023931956,
+              "elbow_yaw": 0.33161255787892263,
+              "elbow_roll": -0.3141592653589793,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.0943951023931953,
+              "shoulder_roll": -0.2792526803190927,
+              "elbow_yaw": -0.5235987755982988,
+              "elbow_roll": 0.15707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.0471975511965976,
+              "hip_roll": 0.4014257279586958,
+              "hip_pitch": -0.22689280275926285,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -1.064650843716541,
+              "ankle_roll": -0.13962634015954636
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.0471975511965976,
+              "hip_roll": -0.4188790204786391,
+              "hip_pitch": -0.9948376736367679,
+              "knee_pitch": 0.8203047484373349,
+              "ankle_pitch": 0.7155849933176751,
+              "ankle_roll": 0.05235987755982989
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.2,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.8849555921538759,
+              "shoulder_roll": -0.20943951023931956,
+              "elbow_yaw": 0.33161255787892263,
+              "elbow_roll": -0.3141592653589793,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.0943951023931953,
+              "shoulder_roll": -0.2792526803190927,
+              "elbow_yaw": -0.5235987755982988,
+              "elbow_roll": 0.15707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -1.0297442586766545,
+              "hip_roll": 0.4188790204786391,
+              "hip_pitch": -0.3839724354387525,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -1.1868238913561442,
+              "ankle_roll": -0.06981317007977318
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -1.0297442586766545,
+              "hip_roll": -0.4363323129985824,
+              "hip_pitch": -0.5410520681182421,
+              "knee_pitch": 0.6981317007977318,
+              "ankle_pitch": 0.5934119456780721,
+              "ankle_roll": 0.19198621771937624
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.4,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.8849555921538759,
+              "shoulder_roll": -0.20943951023931956,
+              "elbow_yaw": 0.33161255787892263,
+              "elbow_roll": -0.3141592653589793,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.0943951023931953,
+              "shoulder_roll": -0.2792526803190927,
+              "elbow_yaw": -0.5235987755982988,
+              "elbow_roll": 0.15707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -0.9948376736367679,
+              "hip_roll": 0.4188790204786391,
+              "hip_pitch": -0.4363323129985824,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -1.1868238913561442,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -0.9948376736367679,
+              "hip_roll": -0.12217304763960307,
+              "hip_pitch": -0.5585053606381855,
+              "knee_pitch": 1.4311699866353502,
+              "ankle_pitch": -0.03490658503988659,
+              "ankle_roll": 0.08726646259971647
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+    {
+      "keyframes": [
+        {
+          "duration": 0.4,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.8849555921538759,
+              "shoulder_roll": -0.20943951023931956,
+              "elbow_yaw": 0.33161255787892263,
+              "elbow_roll": -0.3141592653589793,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.0943951023931953,
+              "shoulder_roll": -0.2792526803190927,
+              "elbow_yaw": -0.5235987755982988,
+              "elbow_roll": 0.15707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": -0.8901179185171081,
+              "hip_roll": 0.4537856055185257,
+              "hip_pitch": -0.24434609527920614,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -1.1868238913561442,
+              "ankle_roll": -0.10471975511965978
+            },
+            "right_leg": {
+              "hip_yaw_pitch": -0.8901179185171081,
+              "hip_roll": -0.3490658503988659,
+              "hip_pitch": -0.2792526803190927,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -1.1693705988362009,
+              "ankle_roll": 0.08726646259971647
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+    {
+      "keyframes": [
+        {
+          "duration": 0.4,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.8849555921538759,
+              "shoulder_roll": 0.20943951023931956,
+              "elbow_yaw": 0.33161255787892263,
+              "elbow_roll": -0.3141592653589793,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 2.0943951023931953,
+              "shoulder_roll": -0.2792526803190927,
+              "elbow_yaw": -0.5235987755982988,
+              "elbow_roll": 0.15707963267948966,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": 0.0,
+              "hip_roll": 0.0,
+              "hip_pitch": -0.8726646259971648,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -1.1868238913561442,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": 0.0,
+              "hip_roll": -0.0,
+              "hip_pitch": -0.8726646259971648,
+              "knee_pitch": 2.0943951023931953,
+              "ankle_pitch": -1.1868238913561442,
+              "ankle_roll": 0.0
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    },
+
+    {
+      "keyframes": [
+        {
+          "duration": 0.8,
+          "positions": {
+            "head": {
+              "yaw": 0.0,
+              "pitch": 0.0
+            },
+            "left_arm": {
+              "shoulder_pitch": 1.5707963267948966,
+              "shoulder_roll": 0.17453292519943295,
+              "elbow_yaw": 0.0,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "right_arm": {
+              "shoulder_pitch": 1.5707963267948966,
+              "shoulder_roll": -0.17453292519943295,
+              "elbow_yaw": 0.0,
+              "elbow_roll": 0.0,
+              "wrist_yaw": 0.0,
+              "hand": 0.0
+            },
+            "left_leg": {
+              "hip_yaw_pitch": 0.0,
+              "hip_roll": 0.0,
+              "hip_pitch": -0.4886921905584123,
+              "knee_pitch": 0.8726646259971648,
+              "ankle_pitch": -0.4363323129985824,
+              "ankle_roll": 0.0
+            },
+            "right_leg": {
+              "hip_yaw_pitch": 0.0,
+              "hip_roll": 0.0,
+              "hip_pitch": -0.4886921905584123,
+              "knee_pitch": 0.8726646259971648,
+              "ankle_pitch": -0.4363323129985824,
+              "ankle_roll": 0.0
+            }
+          }
+        }
+      ],
+
+      "exit_condition": {
+        "StabilizedCondition": {
+          "tolerance": 0.1,
+          "timeout_duration": 5.0
+        }
+      }
+    }
+  ]
+}
