@@ -1,0 +1,14 @@
+INITIAL - Estica totalmente
+
+0 - braços abertos, pernas curvadas
+1 - espacate, braço pra frente acima da cabeça
+2 - fecha perna no cutuvelo, encurva o braço
+3 - senta com a perna esticada
+4 - braço de briga, curva cutuvelo
+5 - abre os braços pro lado da cabeça, porém cutuvelo continua
+6 - estica cutuvelo, estica pe
+7 - gira braço pra direção do troncp
+8 - gira braço para trás
+9 - apoia braço e senta com a perna curvada e pé no chão 
+10 - estica direitaP, curva esquerdaP
+11 - 
