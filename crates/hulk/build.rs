@@ -85,6 +85,7 @@ fn main() -> Result<()> {
                     "control::visual_referee_filter",
                     "control::whistle_filter",
                     "control::world_state_composer",
+                    "control::jaci",
                 ],
             },
             CyclerManifest {

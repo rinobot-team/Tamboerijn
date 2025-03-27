@@ -111,7 +111,7 @@ lazy_static = "1.4.0"
 levenberg-marquardt = "0.13.0"
 libc = "0.2.137"
 log = "0.4.17"
-mlua = { version = "0.8.7", features = ["luajit", "serialize", "parking_lot"] }
+mlua = { version = "0.8.7", features = ["luajit", "serialize", "parking_lot", "vendored", "async"] }
 motionfile = { path = "crates/motionfile" }
 nalgebra = { version = "0.32.2", features = ["serde", "serde-serialize"] }
 nao = { path = "crates/nao" }

@@ -18,6 +18,7 @@ hardware = { workspace = true }
 itertools = { workspace = true }
 kinematics = { workspace = true }
 log = { workspace = true }
+mlua = {workspace = true}
 motionfile = { workspace = true }
 nalgebra = { workspace = true }
 num-traits = {workspace = true}
