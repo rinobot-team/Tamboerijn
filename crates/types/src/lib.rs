@@ -39,6 +39,7 @@ pub mod limb;
 pub mod line;
 pub mod line_data;
 pub mod localization;
+pub mod lua_runtime;
 pub mod message_event;
 pub mod messages;
 pub mod motion_command;

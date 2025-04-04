@@ -15,7 +15,7 @@ pub mod ground_contact_detector;
 pub mod ground_provider;
 pub mod kick_selector;
 pub mod kinematics_provider;
-pub mod jaci;
+pub mod lua_runner;
 pub mod led_status;
 pub mod localization;
 pub mod localization_recorder;
